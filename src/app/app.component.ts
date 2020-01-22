@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, LOCALE_ID, Inject } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'i18n-test';
+  public languageList = [
+    { code: 'en', label: 'English' },
+    { code: 'es', label: 'Espanol' }
+  ];
+
+  constructor(@Inject(LOCALE_ID) protected localeId: string){}
 }

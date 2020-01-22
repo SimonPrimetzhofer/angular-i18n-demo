@@ -61,6 +61,18 @@
                   "maximumError": "10kb"
                 }
               ]
+            },
+            "en": {
+              "aot": true,
+              "i18nFile": "translate/messages.en.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "en"
+            },
+            "es": {
+              "aot": true,
+              "i18nFile": "translate/messages.es.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "es"
             }
           }
         },
@@ -72,6 +84,12 @@
           "configurations": {
             "production": {
               "browserTarget": "i18n-test:build:production"
+            },
+            "es": {
+              "browserTarget": "i18n-test:build:es"
+            },
+            "en": {
+              "browserTarget": "i18n-test:build:en"
             }
           }
         },
@@ -124,6 +142,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "i18n-test"
 }
